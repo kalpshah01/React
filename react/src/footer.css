@@ -1,10 +1,4 @@
-/* REMOVE THIS, USE YOUR OWN  */
-html,body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, Sans-serif;
-  background-color: #070617;
-}
+
 .dummy_page {
   height: 200px;
   width: 100%;
@@ -13,7 +7,7 @@ html,body {
   box-sizing: border-box;
   padding: 60px 0px;
 }
-/* STYLES SPECIFIC TO FOOTER  */
+
 .footer {
   width: 100%;
   position: relative;
@@ -112,4 +106,12 @@ html,body {
   .footer .col {
     width: 100%;
   }
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif;
+  background-color: #070617;
+  color: white !important;
 }

@@ -4,73 +4,70 @@ function Footer() {
   return (
     <div>
 
-        <div className ="dummy_page">
-  Mobile responsive footer
-</div>
 
-<div className ="footer">
-  <div className ="contain">
-  <div className ="col">
-    <h1>Company</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div className ="col">
-    <h1>Products</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div className ="col">
-    <h1>Accounts</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div className ="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Webmail</li>
-      <li>Redeem code</li>
-      <li>WHOIS lookup</li>
-      <li>Site map</li>
-      <li>Web templates</li>
-      <li>Email templates</li>
-    </ul>
-  </div>
-  <div className ="col">
-    <h1>Support</h1>
-    <ul>
-      <li>Contact us</li>
-      <li>Web chat</li>
-      <li>Open ticket</li>
-    </ul>
-  </div>
-  <div className ="col social">
-    <h1>Social</h1>
-    <ul>
-      <li><img src="../linkdin.png" width="32"/> Linkdin</li>
-      
-      <li><img src="https://svgshare.com/i/5eA.svg" width="32" />Github</li>
-      <li><img src="https://svgshare.com/i/5f_.svg" width="32" />Instagram</li>
-    </ul>
-  </div>
-<div className ="clearfix"></div>
-</div>
-</div>
+  <footer className="bg-dark text-white pt-5 pb-3">
+      <div className="container">
+        <div className="row">
+
+          <div className="col-md-2 col-6 mb-3">
+            <h6>Company</h6>
+            <ul className="list-unstyled">
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+
+          <div className="col-md-2 col-6 mb-3">
+            <h6>Products</h6>
+            <ul className="list-unstyled">
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+
+          <div className="col-md-2 col-6 mb-3">
+            <h6>Accounts</h6>
+            <ul className="list-unstyled">
+              <li>About</li>
+              <li>Mission</li>
+              <li>Services</li>
+              <li>Social</li>
+              <li>Get in touch</li>
+            </ul>
+          </div>
+
+          <div className="col-md-2 col-6 mb-3">
+            <h6>Support</h6>
+            <ul className="list-unstyled">
+              <li>Contact us</li>
+              <li>Web chat</li>
+              <li>Open ticket</li>
+            </ul>
+          </div>
+
+          <div className="col-md-4 mb-3">
+            <h6>Social</h6>
+                  <a href="https://www.linkedin.com/in/kalpshah" className="text-white"  ><i className="fab fa-linkedin-in me-2"></i>LinkedIn</a> &nbsp;&nbsp;
+            <a href="https://github.com/kalpshah" className="text-white" ><i className="fab fa-github me-2"></i>GitHub</a>&nbsp;&nbsp;
+            <a href="https://www.instagram.com/kalpshah" className="text-white"  ><i className="fab fa-instagram me-2"></i>Instagram</a>
+        
+          </div>
+
+        </div>
+
+        <hr className="bg-light" />
+
+        <div className="text-center">
+          <small>© 2026 Kalp Shah. All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
 
     </div>
   )

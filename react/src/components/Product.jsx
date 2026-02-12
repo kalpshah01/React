@@ -6,13 +6,12 @@ import p4 from "../assets/images/p4.png";
 
 function Product() {
   return (
-    <div>
+    <div id='Products'>
 <div className="row">
 <h2 className='text-center'> Shop By Collection</h2>
     <div className="col-md-3">
       <div className="card">
         <img src={p1} className="card-img-top" alt="Category" />
-       
       </div>
     </div>
      <div className="col-md-3">

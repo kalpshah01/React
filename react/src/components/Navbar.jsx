@@ -1,11 +1,12 @@
 import React from 'react'
-
+import logo from "../assets/images/logo.png";
 function Navbar() {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
   <div className ="container-fluid">
-    <a className ="navbar-brand" href="#">Navbar</a>
+    <img src={logo} alt="Logo" className="img-fluid" id="logo-img" />
+    <a className ="navbar-brand" href="#">Ring </a>
     <button className ="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className ="navbar-toggler-icon"></span>
     </button>
@@ -15,21 +16,16 @@ function Navbar() {
           <a className ="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className ="nav-item">
-          <a className ="nav-link" href="#">Link</a>
+          <a className ="nav-link" href="#Products">Product</a>
         </li>
-        <li className ="nav-item dropdown">
-          <a className ="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul className ="dropdown-menu">
-            <li><a className ="dropdown-item" href="#">Action</a></li>
-            <li><a className ="dropdown-item" href="#">Another action</a></li>
-            <li><hr className ="dropdown-divider" /></li>
-            <li><a className ="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li className='nav-item'>
+<a href="#About" className='nav-link'>About</a>
         </li>
         <li className ="nav-item">
-          <a className ="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a className ="nav-link" href="#Contact">Contact</a>
+        </li>
+        <li className ="nav-item">
+          <a className ="nav-link" href="#Review">Review  </a>
         </li>
       </ul>
       <form className ="d-flex" role="search">
