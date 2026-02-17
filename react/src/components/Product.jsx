@@ -6,35 +6,36 @@ import p4 from "../assets/images/p4.png";
 
 function Product() {
   return (
-    <div id='Products'>
-<div className="row">
-<h2 className='text-center'> Shop By Collection</h2>
-    <div className="col-md-3">
-      <div className="card">
-        <img src={p1} className="card-img-top" alt="Category" />
+    <div id='Products' className="container py-5">
+      <h2 className='text-center mb-4'>Shop By Collection</h2>
+
+      <div className="row g-4">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div className="card h-100">
+            <img src={p1} className="card-img-top img-fluid" alt="Category" />
+          </div>
+        </div>
+
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div className="card h-100">
+            <img src={p2} className="card-img-top img-fluid" alt="Category" />
+          </div>
+        </div>
+
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div className="card h-100">
+            <img src={p3} className="card-img-top img-fluid" alt="Category" />
+          </div>
+        </div>
+
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div className="card h-100">
+            <img src={p4} className="card-img-top img-fluid" alt="Category" />
+          </div>
+        </div>
       </div>
-    </div>
-     <div className="col-md-3">
-      <div className="card">
-        <img src={p2} className="card-img-top" alt="Category" />
-      
-      </div>
-    </div>
-     <div className="col-md-3">
-      <div className="card">
-        <img src={p3} className="card-img-top" alt="Category" />
-     
-      </div>
-    </div>
-     <div className="col-md-3">
-      <div className="card">
-        <img src={p4} className="card-img-top" alt="Category" />
-       
-      </div>
-    </div>
-</div>
     </div>
   )
 }
 
-export default Product 
+export default Product

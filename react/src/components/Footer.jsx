@@ -53,9 +53,9 @@ function Footer() {
 
           <div className="col-md-4 mb-3">
             <h6>Social</h6>
-                  <a href="https://www.linkedin.com/in/kalpshah" className="text-white"  ><i className="fab fa-linkedin-in me-2"></i>LinkedIn</a> &nbsp;&nbsp;
-            <a href="https://github.com/kalpshah" className="text-white" ><i className="fab fa-github me-2"></i>GitHub</a>&nbsp;&nbsp;
-            <a href="https://www.instagram.com/kalpshah" className="text-white"  ><i className="fab fa-instagram me-2"></i>Instagram</a>
+                  <a href="https://www.linkedin.com/in/kalp-shah-b2074227a/" className="text-white"  ><i className="fab fa-linkedin-in me-2"></i>LinkedIn</a> &nbsp;&nbsp;
+            <a href="https://github.com/kalpshah01" className="text-white" ><i className="fab fa-github me-2"></i>GitHub</a>&nbsp;&nbsp;
+            <a href="https://www.instagram.com/kalpshah01_" className="text-white"  ><i className="fab fa-instagram me-2"></i>Instagram</a>
         
           </div>
 
