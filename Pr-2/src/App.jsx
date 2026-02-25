@@ -1,25 +1,58 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useState, useRef } from "react";
+import html2canvas from "html2canvas";
+import { useReactToPrint } from "react-to-print";
 function App() {
+
+  const handleDownload = async () => {
+    if (!cardRef.current) return;
+
+    const canvas = await html2canvas(cardRef.current, {
+      useCORS: true,
+      scale: 2,
+    });
+
+    const image = canvas.toDataURL("image/png");
+
+    const link = document.createElement("a");
+    link.href = image;
+    link.download = "github-profile.png";
+    link.click();
+
+  };
+
+  const cardRef = useRef();
+
+  const handlePrint = useReactToPrint({
+    contentRef: cardRef,
+  });
+
   const [query, setQuery] = useState("");
   //   console.log(query);
+  
   const [userdata, setUserdata] = useState({});
+  
   useEffect(() => {
+  
     let fetchUserdata = async () => {
       let res = await fetch(`https://api.github.com/users/${query}`);
       let data = await res.json();
       console.log(data);
       setUserdata(data);
+  
     };
+  
     if (query) {
       fetchUserdata();
     }
+  
   }, [query]);
+  
   return (
-    <div className="container mt-5">
+  
+  <div className="container mt-5">
       <div className="row justify-content-center mb-4">
         <div className="col-md-6">
-            <h2 className="text-center ">GitHub User Search</h2>
+          <h2 className="text-center ">GitHub User Search</h2>
           <div className="input-group">
             <input
               type="text"
@@ -40,11 +73,10 @@ function App() {
         </div>
       </div>
 
-    
       {userdata.login && (
         <div className="row justify-content-center">
           <div className="col-md-6">
-            <div className="card shadow-lg text-center p-4">
+            <div className="card shadow-lg text-center p-4" ref={cardRef}>
               <img
                 src={userdata.avatar_url}
                 alt="avatar"
@@ -107,8 +139,17 @@ function App() {
               </div>
             </div>
 
-            <div className="text-center mt-4">
-              <button className="btn btn-success px-4">Download</button>
+            {/* <div className="text-center mt-4">
+              <button className="btn btn-success px-4" onClick={handlePrint}>Download</button>
+            </div> */}
+            <div className="text-center mt-4 d-flex gap-3 justify-content-center">
+              <button className="btn btn-success" onClick={handleDownload}>
+                Download Image
+              </button>
+
+              <button className="btn btn-primary" onClick={handlePrint}>
+                Download PDF
+              </button>
             </div>
           </div>
         </div>
