@@ -74,9 +74,9 @@ function App() {
       </div>
 
       {userdata.login && (
-        <div className="row justify-content-center">
-          <div className="col-md-6">
-            <div className="card shadow-lg text-center p-4" ref={cardRef}>
+        <div className="row justify-content-center ">
+          <div className="col-md-6 ">
+            <div className="card shadow-lg text-center p-4 card-wrapper" ref={cardRef}>
               <img
                 src={userdata.avatar_url}
                 alt="avatar"
@@ -123,7 +123,7 @@ function App() {
                   href={userdata.blog}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn btn-outline-primary btn-sm"
+                  className="btn btn-primary btn-sm"
                 >
                   Linkdin
                 </a>
